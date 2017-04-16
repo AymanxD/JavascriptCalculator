@@ -6,14 +6,14 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      equation: "0", 
+      equation: "0",
       answer: "0",
       prevState: "0"
     }
   }
 
 //Clears both equation and answer.
-  allClear(){
+  allClear(){ 
     this.setState({
       equation:"0",
       answer:"0"
