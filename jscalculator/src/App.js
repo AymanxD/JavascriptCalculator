@@ -13,7 +13,7 @@ class App extends Component {
   }
 
 //Clears both equation and answer.
-  allClear(){ 
+  allClear(){
     this.setState({
       equation:"0",
       answer:"0"
@@ -35,7 +35,7 @@ class App extends Component {
       })
     }else if(this.state.equation === "ERR"){
       this.setState({
-        equation: "ERR"
+        equation: "0"
       })
     }else if(this.state.answer !== "0" && isNaN(value) === false && isNaN(this.state.equation[this.state.equation.length -1]) === false){
       this.setState({
